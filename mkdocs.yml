@@ -1,0 +1,125 @@
+site_name: Network Knowledge Base
+site_description: Personal knowledge base for networking commands, RHEL configs, and troubleshooting
+site_author: Your Name
+site_url: https://yourusername.github.io/network-kb/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags:
+      tags_file: tags.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - def_list
+
+nav:
+  - Home: index.md
+  - Networking:
+      - Overview: networking/index.md
+      - Commands:
+          - IP Command: networking/commands/ip-command.md
+          - nmcli: networking/commands/nmcli.md
+          - Firewall: networking/commands/firewall-cmd.md
+          - Tcpdump: networking/commands/tcpdump.md
+      - Troubleshooting:
+          - Connectivity Issues: networking/troubleshooting/connectivity.md
+          - DNS Problems: networking/troubleshooting/dns-issues.md
+          - Performance: networking/troubleshooting/performance.md
+      - Basics:
+          - OSI Model: networking/basics/osi-model.md
+          - IP Addressing: networking/basics/ip-addressing.md
+          - Subnetting: networking/basics/subnetting.md
+  - RHEL:
+      - Overview: rhel/index.md
+      - Configuration:
+          - Network Setup: rhel/configuration/network-config.md
+          - Firewall: rhel/configuration/firewall.md
+          - SELinux: rhel/configuration/selinux.md
+      - Services:
+          - SSH: rhel/services/ssh.md
+          - Apache: rhel/services/httpd.md
+          - DNS: rhel/services/dns.md
+  - Q&A:
+      - Overview: qa/index.md
+      - Common Issues: qa/common-issues.md
+      - Tips & Tricks: qa/tips-and-tricks.md
+      - Best Practices: qa/best-practices.md
+  - Cheatsheets:
+      - nmcli: cheatsheets/nmcli-cheatsheet.md
+      - Firewall: cheatsheets/firewall-cheatsheet.md
+      - Troubleshooting: cheatsheets/troubleshooting-cheatsheet.md
+  - Tags: tags.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourname
+
+repo_url: https://github.com/yourusername/network-kb
+repo_name: yourusername/network-kb
+
+copyright: Copyright &copy; 2024 Your Name
