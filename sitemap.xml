@@ -2,118 +2,238 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://purpledmango.github.io/lintandpods/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/tags/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
-         <loc>https://purpledmango.github.io/lintandpods/cheatsheets/firewall-cheatsheet/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://purpledmango.github.io/lintandpods/cheatsheets/</loc>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
-         <loc>https://purpledmango.github.io/lintandpods/cheatsheets/nmcli-cheatsheet/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://purpledmango.github.io/lintandpods/databases/</loc>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
-         <loc>https://purpledmango.github.io/lintandpods/cheatsheets/troubleshooting-cheatsheet/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://purpledmango.github.io/lintandpods/databases/mongodb/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/databases/mysql/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/databases/postgres/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/cicd/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/basics/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/compose/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/containers/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/images/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/networking/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/docker/storage/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/devops/kubernetes/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/linux/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/linux/disk-operations/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/linux/recovery/</loc>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/misc/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/misc/commands-reference/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/basics/ip-addressing/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/basics/osi-model/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/basics/subnetting/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/commands/firewall-cmd/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/commands/ip-command/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/commands/nmcli/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/commands/tcpdump/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/troubleshooting/connectivity/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/networking/troubleshooting/dns-issues/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
-         <loc>https://purpledmango.github.io/lintandpods/networking/troubleshooting/performance/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <loc>https://purpledmango.github.io/lintandpods/networking/troubleshooting/network-performance/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/nodejs/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/nodejs/core/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/nodejs/frameworks/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/python/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/python/core/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/python/frameworks/</loc>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/qa/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/qa/best-practices/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/qa/common-issues/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/qa/tips-and-tricks/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/performance/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/programming/nodejs/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/programming/python/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/security/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/setup-workflows/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/troubleshooting/container-issues/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/troubleshooting/database-issues/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/troubleshooting/networking-issues/</loc>
+         <lastmod>2026-02-12</lastmod>
+    </url>
+    <url>
+         <loc>https://purpledmango.github.io/lintandpods/qa/troubleshooting/system-errors/</loc>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/configuration/firewall/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/configuration/network-config/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/configuration/selinux/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/services/dns/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/services/httpd/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
     <url>
          <loc>https://purpledmango.github.io/lintandpods/rhel/services/ssh/</loc>
-         <lastmod>2026-02-09</lastmod>
+         <lastmod>2026-02-12</lastmod>
     </url>
 </urlset>
