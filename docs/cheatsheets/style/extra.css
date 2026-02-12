@@ -1,0 +1,18 @@
+/* Improve reading comfort */
+.md-typeset {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* Softer headings */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Code blocks: subtle, not loud */
+.md-typeset pre > code {
+  font-size: 0.85rem;
+}

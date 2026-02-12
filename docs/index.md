@@ -1,6 +1,6 @@
-# Welcome to My Network Knowledge Base 🌐
+# Welcome to LintandPods Knowledge Base :material-earth:
 
-> A personal collection of networking commands, RHEL configurations, troubleshooting guides, and technical Q&A.
+> A comprehensive collection of Linux, Docker, Kubernetes, database administration, networking commands, RHEL configurations, troubleshooting guides, and technical Q&A.
 
 ---
 
@@ -8,21 +8,29 @@
 
 <div class="grid cards" markdown>
 
--   :material-console-network:{ .lg .middle } __Networking__
+-   :material-penguin:{ .lg .middle } __Linux__
 
     ---
 
-    Commands, protocols, and network fundamentals
+    Linux administration, networking, RHEL configuration, and system management
 
-    [:octicons-arrow-right-24: Explore Networking](networking/index.md)
+    [:octicons-arrow-right-24: Explore Linux](linux/index.md)
 
--   :material-redhat:{ .lg .middle } __RHEL__
+-   :material-docker:{ .lg .middle } __DevOps & Infrastructure__
 
     ---
 
-    Red Hat Enterprise Linux configurations and services
+    Docker, Kubernetes, CI/CD pipelines, and infrastructure automation
 
-    [:octicons-arrow-right-24: RHEL Guides](rhel/index.md)
+    [:octicons-arrow-right-24: DevOps Guides](devops/index.md)
+
+-   :material-database:{ .lg .middle } __Databases__
+
+    ---
+
+    MySQL, MongoDB, PostgreSQL administration and management
+
+    [:octicons-arrow-right-24: Explore Databases](databases/index.md)
 
 -   :material-frequently-asked-questions:{ .lg .middle } __Q&A__
 
@@ -38,13 +46,13 @@
 
     Quick reference guides for everyday tasks
 
-    [:octicons-arrow-right-24: View Cheatsheets](cheatsheets/nmcli-cheatsheet.md)
+    [:octicons-arrow-right-24: View Cheatsheets](cheatsheets/index.md)
 
 </div>
 
 ---
 
-## 🔍 Search Tips
+## :material-magnify: Search Tips
 
 Use the search bar above to find:
 
@@ -55,22 +63,29 @@ Use the search bar above to find:
 
 ---
 
-## 📚 Popular Topics
+## :material-library: Popular Topics
 
-### Most Referenced Commands
+### Linux & Networking
 
 - [nmcli - NetworkManager CLI](networking/commands/nmcli.md)
 - [ip command - Network Configuration](networking/commands/ip-command.md)
 - [firewall-cmd - Firewall Management](networking/commands/firewall-cmd.md)
-- [tcpdump - Packet Capture](networking/commands/tcpdump.md)
+- [Network Troubleshooting](networking/troubleshooting/connectivity.md)
 
-### Common Troubleshooting
+### Docker & Kubernetes
 
-- [Connectivity Issues](networking/troubleshooting/connectivity.md)
-- [DNS Problems](networking/troubleshooting/dns-issues.md)
-- [Network Performance](networking/troubleshooting/performance.md)
+- [DevOps & Infrastructure](devops/index.md)
+- [Docker Container Management](devops/docker/index.md)
+- [Kubernetes Orchestration](devops/kubernetes/index.md)
+- [CI/CD Pipelines](devops/cicd/index.md)
 
-### RHEL Configuration
+### Databases
+
+- [MySQL User Management](databases/mysql/index.md)
+- [MongoDB Collections & Queries](databases/mongodb/index.md)
+- [PostgreSQL Configuration](databases/postgres/index.md)
+
+### RHEL Administration
 
 - [Network Configuration](rhel/configuration/network-config.md)
 - [Firewall Setup](rhel/configuration/firewall.md)
@@ -78,7 +93,7 @@ Use the search bar above to find:
 
 ---
 
-## 🆕 Recent Updates
+## :material-plus-circle: Recent Updates
 
 !!! tip "Latest Additions"
     - Added comprehensive nmcli guide
@@ -87,7 +102,7 @@ Use the search bar above to find:
 
 ---
 
-## 🏷️ Browse by Tag
+## :material-tag-multiple: Browse by Tag
 
 Explore content by topic:
 
@@ -95,25 +110,28 @@ Explore content by topic:
 
 ---
 
-## 💡 About This KB
+## :material-information: About This KB
 
-This knowledge base is my personal collection of:
+This knowledge base is a comprehensive collection of:
 
-- **Commands I use frequently** with real examples and outputs
-- **Solutions to problems I've encountered** in production
-- **Configuration snippets** that I've tested and verified
-- **Troubleshooting workflows** that actually work
+- **Linux & RHEL Administration**: System configuration, networking, and services
+- **DevOps Technologies**: Docker containerization and Kubernetes orchestration
+- **Database Administration**: MySQL, MongoDB, and PostgreSQL management
+- **Networking**: Commands, protocols, troubleshooting, and best practices
+- **Troubleshooting Workflows**: Real solutions to real problems
+- **Command References**: Tested and verified with real outputs
 
 Everything here is:
 
-- ✅ Tested on RHEL 8/9
-- ✅ Based on real-world scenarios
-- ✅ Continuously updated
-- ✅ Searchable and organized
+- :material-check-circle: Tested on modern Linux systems
+- :material-check-circle: Based on real-world scenarios
+- :material-check-circle: Continuously updated
+- :material-check-circle: Searchable and well-organized
+- :material-check-circle: Covers multiple technologies and platforms
 
 ---
 
-## 🚀 Quick Start Examples
+## :material-rocket: Quick Start Examples
 
 ### Example 1: Configure Static IP
 
@@ -149,7 +167,7 @@ dig google.com
 
 ---
 
-## 📖 How to Use This KB
+## :material-book-open: How to Use This KB
 
 1. **Search First**: Use the search bar for quick answers
 2. **Browse by Section**: Navigate using the top menu
@@ -159,7 +177,7 @@ dig google.com
 
 ---
 
-## 🤝 Contributing
+## :material-handshake: Contributing
 
 Found an error or want to improve something?
 

@@ -1,125 +1,304 @@
-site_name: Network Knowledge Base
-site_description: Personal knowledge base for networking commands, RHEL configs, and troubleshooting
-site_author: Your Name
-site_url: https://yourusername.github.io/network-kb/
+site_name: LintandPods
+site_description: >
+  A comprehensive knowledge base covering Linux administration, Docker containerization,
+  Kubernetes orchestration, networking, RHEL configuration, databases (MySQL, MongoDB, PostgreSQL),
+  Python development, Node.js programming, troubleshooting guides, and command references.
+site_author: purpledmango
+site_url: https://purpledmango.github.io/lintandpods/
 
+repo_url: https://github.com/purpledmango/lintandpods
+repo_name: purpledmango/lintandpods
+edit_uri: edit/main/docs/
+
+copyright: >
+  Copyright © 2026 purpledmango ·
+  Content licensed for public learning and reference
+
+# ---------------------------
+# THEME (Material Design)
+# ---------------------------
 theme:
   name: material
+  language: en
+
   palette:
     # Light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: blue grey
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/weather-night
+        name: 🌙 Switch to dark mode
+      media: "(prefers-color-scheme: light)"
+
     # Dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: green
+      accent: blue grey
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/weather-sunny
+        name: ☀️ Switch to light mode
+      media: "(prefers-color-scheme: dark)"
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
   features:
+    # Navigation
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - navigation.tracking
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.tabs.link
-    - content.code.annotation
+    - navigation.expand
+    - navigation.path
+    - navigation.footer
+
+    # Content
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - content.tabs.link
     - content.tooltips
+
+    # Search
+    - search.highlight
+    - search.suggest
+    - search.share
+
+    # Table of contents
+    - toc.follow
+
   icon:
     repo: fontawesome/brands/github
+    admonition:
+      note: fontawesome/solid/note-sticky
+      abstract: fontawesome/solid/book
+      info: fontawesome/solid/info
+      tip: fontawesome/solid/lightbulb
+      success: fontawesome/solid/check
+      question: fontawesome/solid/circle-question
+      warning: fontawesome/solid/triangle-exclamation
+      failure: fontawesome/solid/xmark
+      danger: fontawesome/solid/bolt
+      bug: fontawesome/solid/bug
+      example: fontawesome/solid/flask
+      quote: fontawesome/solid/quote-left
+      command: fontawesome/solid/terminal
 
+# ---------------------------
+# PLUGINS
+# ---------------------------
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang: en
+      prebuild_index: python
+
   - tags:
       tags_file: tags.md
 
+  - section-index
+
+  - meta
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      cache_safe: true
+
+  - rss:
+      abstract_chars_count: 160
+
+# ---------------------------
+# MARKDOWN EXTENSIONS
+# ---------------------------
 markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - admonition
   - pymdownx.details
+
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+
+  - pymdownx.inlinehilite
+
+  - pymdownx.snippets:
+      check_paths: true
+
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+
+  - pymdownx.keys:
+      camel_case: true
+
   - pymdownx.mark
-  - pymdownx.critic
   - pymdownx.caret
-  - pymdownx.keys
   - pymdownx.tilde
-  - attr_list
-  - md_in_html
+
+  - pymdownx.critic:
+      mode: view
+
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tabbed:
-      alternate_style: true
+
   - tables
   - footnotes
   - def_list
+  - attr_list
+  - md_in_html
+  - abbr
 
+# ---------------------------
+# NAVIGATION
+# ---------------------------
 nav:
   - Home: index.md
-  - Networking:
-      - Overview: networking/index.md
-      - Commands:
-          - IP Command: networking/commands/ip-command.md
-          - nmcli: networking/commands/nmcli.md
-          - Firewall: networking/commands/firewall-cmd.md
-          - Tcpdump: networking/commands/tcpdump.md
-      - Troubleshooting:
-          - Connectivity Issues: networking/troubleshooting/connectivity.md
-          - DNS Problems: networking/troubleshooting/dns-issues.md
-          - Performance: networking/troubleshooting/performance.md
-      - Basics:
-          - OSI Model: networking/basics/osi-model.md
-          - IP Addressing: networking/basics/ip-addressing.md
-          - Subnetting: networking/basics/subnetting.md
-  - RHEL:
-      - Overview: rhel/index.md
-      - Configuration:
-          - Network Setup: rhel/configuration/network-config.md
-          - Firewall: rhel/configuration/firewall.md
-          - SELinux: rhel/configuration/selinux.md
-      - Services:
-          - SSH: rhel/services/ssh.md
-          - Apache: rhel/services/httpd.md
-          - DNS: rhel/services/dns.md
+
+  - Linux:
+      - Overview: linux/index.md
+      - Networking:
+          - Overview: networking/index.md
+          - Commands:
+              - IP Command: networking/commands/ip-command.md
+              - nmcli: networking/commands/nmcli.md
+              - Firewall: networking/commands/firewall-cmd.md
+              - Tcpdump: networking/commands/tcpdump.md
+          - Troubleshooting:
+              - Connectivity Issues: networking/troubleshooting/connectivity.md
+              - DNS Problems: networking/troubleshooting/dns-issues.md
+              - Performance: networking/troubleshooting/performance.md
+          - Basics:
+              - OSI Model: networking/basics/osi-model.md
+              - IP Addressing: networking/basics/ip-addressing.md
+              - Subnetting: networking/basics/subnetting.md
+      - Disk Operations: linux/disk-operations/index.md
+      - Recovery & Rescue: linux/recovery/index.md
+      - RHEL:
+          - Overview: rhel/index.md
+          - Configuration:
+              - Network Setup: rhel/configuration/network-config.md
+              - Firewall: rhel/configuration/firewall.md
+              - SELinux: rhel/configuration/selinux.md
+          - Services:
+              - SSH: rhel/services/ssh.md
+              - Apache: rhel/services/httpd.md
+              - DNS: rhel/services/dns.md
+      - Cheatsheets:
+          - nmcli: cheatsheets/nmcli-cheatsheet.md
+          - Firewall: cheatsheets/firewall-cheatsheet.md
+          - Troubleshooting: cheatsheets/troubleshooting-cheatsheet.md
+
+  - Docker:
+      - Overview: docker/index.md
+      - Basics: docker/basics/index.md
+      - Images: docker/images/index.md
+      - Containers: docker/containers/index.md
+      - Networking: docker/networking/index.md
+      - Storage & Volumes: docker/storage/index.md
+      - Docker Compose: docker/compose/index.md
+
+  - Kubernetes:
+      - Overview: kubernetes/index.md
+
+  - Databases:
+      - Overview: databases/index.md
+      - MySQL: databases/mysql/index.md
+      - MongoDB: databases/mongodb/index.md
+      - PostgreSQL: databases/postgres/index.md
+
+  - Python:
+      - Overview: python/index.md
+      - Core Language: python/core/index.md
+      - Frameworks: python/frameworks/index.md
+
+  - Node.js:
+      - Overview: nodejs/index.md
+      - Core Language: nodejs/core/index.md
+      - Frameworks: nodejs/frameworks/index.md
+
   - Q&A:
       - Overview: qa/index.md
       - Common Issues: qa/common-issues.md
       - Tips & Tricks: qa/tips-and-tricks.md
       - Best Practices: qa/best-practices.md
-  - Cheatsheets:
-      - nmcli: cheatsheets/nmcli-cheatsheet.md
-      - Firewall: cheatsheets/firewall-cheatsheet.md
-      - Troubleshooting: cheatsheets/troubleshooting-cheatsheet.md
+
+  - Miscellaneous:
+      - Overview: misc/index.md
+      - Commands Reference: misc/commands-reference.md
+
   - Tags: tags.md
 
+# ---------------------------
+# EXTRA (UI & SEO)
+# ---------------------------
 extra:
+  generator: false
+
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername
+      link: https://github.com/purpledmango
+      name: GitHub
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/yourname
+      link: https://www.linkedin.com/in/nitishmerlin/
+      name: LinkedIn
 
-repo_url: https://github.com/yourusername/network-kb
-repo_name: yourusername/network-kb
+  meta:
+    - property: og:type
+      content: website
+    - property: og:title
+      content: LintandPods – Linux, Docker & DevOps Knowledge Base
+    - property: og:description
+      content: >
+        Practical guides for Linux, Docker, Kubernetes, databases,
+        networking, RHEL administration, troubleshooting, and command references.
+    - property: og:url
+      content: https://purpledmango.github.io/lintandpods/
+    - property: og:image
+      content: https://purpledmango.github.io/lintandpods/assets/social-preview.png
 
-copyright: Copyright &copy; 2024 Your Name
+    - name: twitter:card
+      content: summary_large_image
+    - name: twitter:title
+      content: LintandPods – Linux, Docker & DevOps Knowledge Base
+    - name: twitter:description
+      content: >
+        Comprehensive technical knowledge base for Linux, Docker, Kubernetes,
+        databases, networking, RHEL, and DevOps engineers.
+    - name: twitter:image
+      content: https://purpledmango.github.io/lintandpods/assets/social-preview.png
+
+# ---------------------------
+# STYLES & ASSETS
+# ---------------------------
+extra_css:
+  - styles/extra.css
+
+# ---------------------------
+# BUILD SETTINGS
+# ---------------------------
+docs_dir: docs
+site_dir: site
+strict: false
+use_directory_urls: true

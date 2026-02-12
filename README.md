@@ -1,4 +1,4 @@
-# Network Knowledge Base Template
+# Lintandpods - Network Knowledge Base
 
 A ready-to-use MkDocs template for building a searchable, keyword-friendly knowledge base for networking commands, configurations, and troubleshooting guides.
 
@@ -32,8 +32,8 @@ sudo apt install python3 python3-pip git
 pip3 install mkdocs-material
 
 # 2. Clone or download this template
-git clone https://github.com/yourusername/network-kb.git
-cd network-kb
+git clone https://github.com/purpledmango/lintandpods.git
+cd lintandpods
 
 # 3. Test locally
 mkdocs serve
@@ -46,10 +46,10 @@ mkdocs serve
 
 1. **Edit `mkdocs.yml`:**
    ```yaml
-   site_name: Your KB Name
+   site_name: Lintandpods KB
    site_author: Your Name
-   site_url: https://yourusername.github.io/network-kb/
-   repo_url: https://github.com/yourusername/network-kb
+   site_url: https://purpledmango.github.io/lintandpods/
+   repo_url: https://github.com/purpledmango/lintandpods
    ```
 
 2. **Customize home page:**
@@ -63,7 +63,7 @@ mkdocs serve
 ## Project Structure
 
 ```
-network-kb/
+lintandpods/
 ├── docs/                           # All documentation
 │   ├── index.md                    # Home page
 │   ├── tags.md                     # Auto-generated tag index
@@ -222,7 +222,7 @@ The template includes GitHub Actions workflow (`.github/workflows/deploy-docs.ym
    git init
    git add .
    git commit -m "Initial commit"
-   git remote add origin https://github.com/yourusername/network-kb.git
+   git remote add origin https://github.com/purpledmango/lintandpods.git
    git push -u origin main
    ```
 
@@ -234,7 +234,7 @@ The template includes GitHub Actions workflow (`.github/workflows/deploy-docs.ym
 
 3. Every push to `main` will auto-deploy!
 
-Your site will be at: `https://yourusername.github.io/network-kb/`
+Your site will be at: `https://purpledmango.github.io/lintandpods/`
 
 ## Customization
 
